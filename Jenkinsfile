@@ -27,6 +27,7 @@ pipeline {
 }
 */
 
+/*
 @Library('roboshop') _
 
 pipeline {
@@ -58,7 +59,10 @@ pipeline {
         }
     }
 }
+*/
 
+@Library('roboshop') _
+test.new1()
 
 
 
