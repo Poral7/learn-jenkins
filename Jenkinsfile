@@ -35,7 +35,7 @@ pipeline {
         stage('test') {
             steps {
                 script {
-                    def abc = "hello"
+                    env.abc = "hello"
                     def xyz = 10
 
                     print "abc = ${abc}"
@@ -43,6 +43,16 @@ pipeline {
 
                     print abc
 
+                }
+                script {
+                    print "abc = ${abc}"
+                }
+            }
+        }
+        stage('test2'){
+            steps {
+                script {
+                  print "abc = ${abc}"
                 }
             }
         }
