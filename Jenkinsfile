@@ -62,6 +62,8 @@ pipeline {
 */
 
 @Library('roboshop') _
+
+env.abc = "sunil"
 test.new1()
 
 
